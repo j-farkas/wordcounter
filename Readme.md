@@ -1,12 +1,12 @@
 # _Word Counter_
 
-#### _Counts number of times a word repeats in a sentence_
+#### _Counts number of times a word repeats in a given phrase_
 
 #### By _**Jared Farkas**_
 
 ## Description
 
-_This checks how many times a given word is repeated in a phrase. It also checks for partial matches eg("cat" is found in "cathedral")_
+_This checks how many times a given word is repeated in a phrase. It also checks for partial matches eg("cat" is found in "cathedral"). Punctuation and spacing is ignored in the phrase, and not accepted in the input_
 
 ## Setup/Installation Requirements
 
