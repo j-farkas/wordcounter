@@ -28,7 +28,6 @@ namespace Wordcount.Models
             return count;
           }
         }
-
         for(int i = 0; i < to.Length; i++)
           {
             if(to[i] == compare[0])
