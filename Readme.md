@@ -34,7 +34,7 @@ _Contact jaredmfarkas@gmail.com for support._
 
 ## Technologies Used
 
-_C#_
+_C# and .Net_
 
 ### License
 

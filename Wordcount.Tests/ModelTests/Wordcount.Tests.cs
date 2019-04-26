@@ -33,7 +33,7 @@ namespace Wordcount.TestTools
     [TestMethod]
     public void CheckCount_ReturnWordInbiggerword_2()
     {
-      Counter theCount = new Counter("cat","cathy cathedral");
+      Counter theCount = new Counter("cAt","cathy cathedral");
       Assert.AreEqual(2, theCount.Count());
     }
     [TestMethod]

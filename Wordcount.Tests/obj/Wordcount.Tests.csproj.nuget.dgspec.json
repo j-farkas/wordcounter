@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount.tests\\Wordcount.Tests.csproj": {}
+    "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount.Tests\\Wordcount.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount.tests\\Wordcount.Tests.csproj": {
+    "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount.Tests\\Wordcount.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount.tests\\Wordcount.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount.Tests\\Wordcount.Tests.csproj",
         "projectName": "Wordcount.Tests",
-        "projectPath": "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount.tests\\Wordcount.Tests.csproj",
+        "projectPath": "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount.Tests\\Wordcount.Tests.csproj",
         "packagesPath": "C:\\Users\\JF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount.tests\\obj\\",
+        "outputPath": "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
