@@ -18,5 +18,23 @@ namespace Wordcount.TestTools
       Counter theCount = new Counter("a","cat");
       Assert.AreEqual(1, theCount.Count());
     }
+    [TestMethod]
+    public void CheckCount_ReturnWordInWord_1()
+    {
+      Counter theCount = new Counter("cat","cat");
+      Assert.AreEqual(1, theCount.Count());
+    }
+    [TestMethod]
+    public void CheckCount_ReturnWordInWords_2()
+    {
+      Counter theCount = new Counter("cat","cat cat");
+      Assert.AreEqual(2, theCount.Count());
+    }
+    [TestMethod]
+    public void CheckCount_ReturnWordInbiggerword_2()
+    {
+      Counter theCount = new Counter("cat","cat cathedral");
+      Assert.AreEqual(2, theCount.Count());
+    }
   }
 }
