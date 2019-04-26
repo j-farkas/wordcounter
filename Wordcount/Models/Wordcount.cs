@@ -19,7 +19,6 @@ namespace Wordcount.Models
       public int Count()
       {
         int count = 0;
-
         char[] compare = _compare.ToLower().ToCharArray();
         char[] to = _comparedTo.ToLower().ToCharArray();
         foreach(char letter in compare)
@@ -48,7 +47,6 @@ namespace Wordcount.Models
                 {
                   if(to[i+j] != compare[j-toIgnore])
                   {
-
                     break;
                   }
                 }
@@ -57,7 +55,6 @@ namespace Wordcount.Models
                   count++;
                 }
               }
-
             }
           }
         return count;

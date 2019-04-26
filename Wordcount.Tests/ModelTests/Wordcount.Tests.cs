@@ -48,5 +48,11 @@ namespace Wordcount.TestTools
       Counter theCount = new Counter("cat/","c.at c.a/thedral");
       Assert.AreEqual(0, theCount.Count());
     }
+    [TestMethod]
+    public void CheckCount_wordrepeatswithinword_2()
+    {
+      Counter theCount = new Counter("ana","banana");
+      Assert.AreEqual(2, theCount.Count());
+    }
   }
 }
