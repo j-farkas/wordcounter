@@ -39,13 +39,13 @@ namespace Wordcount.TestTools
     [TestMethod]
     public void CheckCount_ReturnWordIgnoreSymbolsbiggerword_2()
     {
-      Counter theCount = new Counter("cat","/.cwac at/c.a t this casketc/a/t");
+      Counter theCount = new Counter("cat","/.cwac at/c.a t this casketc/a/t..ca...ca...");
       Assert.AreEqual(3, theCount.Count());
     }
     [TestMethod]
     public void CheckCount_ReturnWordIgnoreSymbolsinComparer_2()
     {
-      Counter theCount = new Counter("cat/","c.at c.a/thedral");
+      Counter theCount = new Counter("cat/","c.at c.a/thedralc...");
       Assert.AreEqual(0, theCount.Count());
     }
     [TestMethod]
