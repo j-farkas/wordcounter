@@ -20,14 +20,23 @@ namespace Wordcount.Models
       {
         int count = 0;
 
-        char[] compare = _compare.ToCharArray();
-        char[] to = _comparedTo.ToCharArray();
+        char[] compare = _compare.ToLower().ToCharArray();
+        char[] to = _comparedTo.ToLower().ToCharArray();
+        foreach(char letter in compare)
+        {
+          if(Array.IndexOf(Counter._letters,letter) < 0)
+          {
+            return count;
+          }
+        }
+
 
         for(int i = 0; i < to.Length; i++)
           {
             if(to[i] == compare[0])
             {
               int startCheck = 1;
+              int ignored = 0;
               while(startCheck > 0)
               {
                 if(startCheck >= compare.Length-1)
@@ -36,12 +45,22 @@ namespace Wordcount.Models
                   startCheck = 0;
                 }else
                 {
-                  if(to[i+startCheck] == to[startCheck])
+                  if(Array.IndexOf(Counter._letters, to[i+startCheck+ignored]) < 0)
                   {
-                    startCheck++;
+                    ignored++;
+                    if(startCheck+ignored + i > to.Length)
+                    {
+                      break;
+                    }
                   }else
                   {
-                    break;
+                    if(to[i+startCheck + ignored] == to[startCheck + ignored])
+                    {
+                      startCheck++;
+                    }else
+                    {
+                      break;
+                    }
                   }
                 }
               }

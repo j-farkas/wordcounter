@@ -36,5 +36,11 @@ namespace Wordcount.TestTools
       Counter theCount = new Counter("cat","cat cathedral");
       Assert.AreEqual(2, theCount.Count());
     }
+    [TestMethod]
+    public void CheckCount_ReturnWordIgnoreSymbolsbiggerword_2()
+    {
+      Counter theCount = new Counter("cat","cat c/a.thedral");
+      Assert.AreEqual(2, theCount.Count());
+    }
   }
 }
