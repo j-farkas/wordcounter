@@ -1,0 +1,9 @@
+C:\Users\JF\documents\git\wordcounter\Wordcount\bin\Debug\netcoreapp2.2\Wordcount.deps.json
+C:\Users\JF\documents\git\wordcounter\Wordcount\bin\Debug\netcoreapp2.2\Wordcount.dll
+C:\Users\JF\documents\git\wordcounter\Wordcount\bin\Debug\netcoreapp2.2\Wordcount.pdb
+C:\Users\JF\documents\git\wordcounter\Wordcount\obj\Debug\netcoreapp2.2\Wordcount.csprojAssemblyReference.cache
+C:\Users\JF\documents\git\wordcounter\Wordcount\obj\Debug\netcoreapp2.2\Wordcount.csproj.CoreCompileInputs.cache
+C:\Users\JF\documents\git\wordcounter\Wordcount\obj\Debug\netcoreapp2.2\Wordcount.AssemblyInfoInputs.cache
+C:\Users\JF\documents\git\wordcounter\Wordcount\obj\Debug\netcoreapp2.2\Wordcount.AssemblyInfo.cs
+C:\Users\JF\documents\git\wordcounter\Wordcount\obj\Debug\netcoreapp2.2\Wordcount.dll
+C:\Users\JF\documents\git\wordcounter\Wordcount\obj\Debug\netcoreapp2.2\Wordcount.pdb

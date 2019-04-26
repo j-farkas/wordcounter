@@ -6,12 +6,17 @@ namespace Wordcount.TestTools
   [TestClass]
   public class CounterTests
   {
-    // [TestMethod]
-    // public void CheckIsSorted_BubbleSortsArray_True()
-    // {
-    //   int[] num = new int[] {4, 3, 1, 2};
-    //   int[] num2 = SortingMethods.BubbleSort(num);
-    //   Assert.AreEqual(3, num2[2]);
+    [TestMethod]
+    public void CheckCount_ReturnSingleLetter_1()
+    {
+      Counter theCount = new Counter("a","a");
+      Assert.AreEqual(1, theCount.Count());
+    }
+    [TestMethod]
+    public void CheckCount_ReturnSingleLetterInWord_1()
+    {
+      Counter theCount = new Counter("a","cat");
+      Assert.AreEqual(1, theCount.Count());
     }
   }
 }
