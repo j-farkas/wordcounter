@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sorting\Sorting.csproj" />
+    <ProjectReference Include="..\Wordcount\Wordcount.csproj" />
   </ItemGroup>
 
 </Project>
