@@ -30,43 +30,35 @@ namespace Wordcount.Models
           }
         }
 
-
         for(int i = 0; i < to.Length; i++)
           {
             if(to[i] == compare[0])
             {
-              int startCheck = 1;
-              int ignored = 0;
-              while(startCheck > 0)
+              int toIgnore = 0;
+              for(int j = 0;j-toIgnore<compare.Length;j++)
               {
-                if(startCheck >= compare.Length-1)
+                if(i+j+toIgnore >= to.Length)
                 {
-                  count++;
-                  startCheck = 0;
+                  break;
+                }
+                if(Array.IndexOf(_letters, to[i+j+toIgnore]) < 0)
+                {
+                  toIgnore++;
                 }else
                 {
-                  if(Array.IndexOf(Counter._letters, to[i+startCheck+ignored]) < 0)
+                  if(to[i+j+toIgnore] != compare[j-toIgnore])
                   {
-                    ignored++;
-                    if(startCheck+ignored + i > to.Length)
-                    {
-                      break;
-                    }
-                  }else
-                  {
-                    if(to[i+startCheck + ignored] == to[startCheck + ignored])
-                    {
-                      startCheck++;
-                    }else
-                    {
-                      break;
-                    }
+                    break;
                   }
                 }
+                if(j-toIgnore == compare.Length-1)
+                {
+                  count++;
+                }
               }
+
             }
           }
-
         return count;
       }
   }

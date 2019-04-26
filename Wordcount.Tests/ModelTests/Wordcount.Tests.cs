@@ -33,19 +33,19 @@ namespace Wordcount.TestTools
     [TestMethod]
     public void CheckCount_ReturnWordInbiggerword_2()
     {
-      Counter theCount = new Counter("cat","cat cathedral");
+      Counter theCount = new Counter("cat","cathy cathedral");
       Assert.AreEqual(2, theCount.Count());
     }
     [TestMethod]
     public void CheckCount_ReturnWordIgnoreSymbolsbiggerword_2()
     {
-      Counter theCount = new Counter("cat",".c.a(:t c.a/thedral func a.t");
+      Counter theCount = new Counter("cat","c at cart this c");
       Assert.AreEqual(3, theCount.Count());
     }
     [TestMethod]
     public void CheckCount_ReturnWordIgnoreSymbolsinComparer_2()
     {
-      Counter theCount = new Counter("cat/","c.a(t c.a/thedral");
+      Counter theCount = new Counter("cat/","c.at c.a/thedral");
       Assert.AreEqual(0, theCount.Count());
     }
   }
