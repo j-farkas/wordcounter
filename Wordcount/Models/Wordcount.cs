@@ -9,7 +9,6 @@ namespace Wordcount.Models
       private string _compare;
       private string _comparedTo;
 
-
       public Counter(string com, string to)
       {
         _compare = com;
