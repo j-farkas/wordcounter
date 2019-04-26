@@ -37,17 +37,18 @@ namespace Wordcount.Models
               int toIgnore = 0;
               for(int j = 0;j-toIgnore<compare.Length;j++)
               {
-                if(i+j+toIgnore >= to.Length)
+                if(i+j > to.Length-1)
                 {
                   break;
                 }
-                if(Array.IndexOf(_letters, to[i+j+toIgnore]) < 0)
+                if(Array.IndexOf(_letters, to[i+j]) < 0)
                 {
                   toIgnore++;
                 }else
                 {
-                  if(to[i+j+toIgnore] != compare[j-toIgnore])
+                  if(to[i+j] != compare[j-toIgnore])
                   {
+
                     break;
                   }
                 }

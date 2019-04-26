@@ -39,7 +39,7 @@ namespace Wordcount.TestTools
     [TestMethod]
     public void CheckCount_ReturnWordIgnoreSymbolsbiggerword_2()
     {
-      Counter theCount = new Counter("cat","c at cart this c");
+      Counter theCount = new Counter("cat","/.cwac at/c.a t this casketc/a/t");
       Assert.AreEqual(3, theCount.Count());
     }
     [TestMethod]
