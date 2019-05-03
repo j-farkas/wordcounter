@@ -39,7 +39,7 @@ namespace Hangman.Controllers
       if(Counter.GetAll().Count > 0)
       {
         List<Counter> allCounters = Counter.GetAll();
-        return View();
+        return View(allCounters);
       }else
       {
         return RedirectToAction("Add");
