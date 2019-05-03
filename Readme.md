@@ -11,7 +11,7 @@ _This checks how many times a given word is repeated in a phrase. It also checks
 ## Setup/Installation Requirements
 
 * _Clone from https://github.com/j-farkas/wordcounter.git_
-* _Include the class in a c# project_
+* _Use dotnet run and load it from localhost_
 
 ## Specs
 
@@ -34,7 +34,7 @@ _Contact jaredmfarkas@gmail.com for support._
 
 ## Technologies Used
 
-_C# and .Net_
+_C#, .Net, Razor_
 
 ### License
 
