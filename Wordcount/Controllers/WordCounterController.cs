@@ -33,20 +33,32 @@ namespace Hangman.Controllers
     // }
     //
     [HttpGet("/game/play")]
-    public ActionResult Play()
+    public ActionResult Index()
     {
 
-      if(Game.GetAll().Count > 0)
+      if(Counter.GetAll().Count > 0)
       {
-        List<Game> allCategories = Game.GetAll();
-        Game toPlay = Game.Find(1);
-        return View(toPlay);
+        List<Counter> allCounters = Counter.GetAll();
+        return View();
       }else
       {
-        return RedirectToAction("Index", "Home");
+        return RedirectToAction("Add");
       }
 
     }
+
+    [HttpGet("/game/add")]
+      public ActionResult Add()
+      {
+        return View();
+      }
+
+    [HttpPost("/game")]
+      public ActionResult Create(string compare, string to)
+      {
+          new Counter(compare, to);
+      }
+
 
     // //
     // [HttpPost("/game/play/again")]
