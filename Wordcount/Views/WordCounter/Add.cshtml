@@ -3,8 +3,11 @@
   <head>
     <meta charset='utf-8'>
     <title>Add words to check!</title>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="~/css/styles.css">
   </head>
   <body>
+    <div class="container">
     <h1>Word Counter</h1>
     <form action="/game" method="post">
       <label for="compare">Compare this word</label>
@@ -13,5 +16,6 @@
       <input id="to" name="to" type="text">
       <button type="submit">Submit</button>
     </form>
+  </div>
   </body>
 </html>

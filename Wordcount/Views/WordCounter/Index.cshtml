@@ -9,14 +9,16 @@
   </head>
 
   <body>
-    <h1>Word Counter</h1>
-@foreach(var words in Model)
-{
-<a href=/game/@words.GetId()>The word "@words.GetCompare()" appears @words.Count() times in the phrase "@words.GetTo()"</a><br>
-}
-<form action="/game/delete" method="post">
-<button type="submit">Delete All Entries</button>
-</form>
-<a href='/game/add'>Add a new set of words</a><br>
+    <div class="container">
+      <h1 class="text-center">Word Counter</h1><br>
+      @foreach(var words in Model)
+      {
+      <a href=/game/@words.GetId()>The word "@words.GetCompare()" appears @words.Count() times in the phrase "@words.GetTo()"</a><br>
+      }
+      <form action="/game/delete" method="post">
+      <button type="submit">Delete All Entries</button>
+      </form>
+      <a href='/game/add'>Add a new set of words</a><br>
+    </div>
   </body>
 </html>

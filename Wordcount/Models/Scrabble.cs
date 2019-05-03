@@ -13,7 +13,8 @@ namespace Wordcount.Models
     private static char[] Eight = "jx".ToCharArray();
     private static char[] Ten = "qz".ToCharArray();
 
-    public static int ScoreIt(string theWord){
+    public static int ScoreIt(string theWord)
+    {
       int score = 0;
       theWord = theWord.ToLower();
       char[] toScore = theWord.ToCharArray();
