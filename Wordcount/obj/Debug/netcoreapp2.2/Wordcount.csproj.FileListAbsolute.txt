@@ -7,3 +7,8 @@ C:\Users\JF\documents\git\wordcounter\Wordcount\obj\Debug\netcoreapp2.2\Wordcoun
 C:\Users\JF\documents\git\wordcounter\Wordcount\obj\Debug\netcoreapp2.2\Wordcount.AssemblyInfo.cs
 C:\Users\JF\documents\git\wordcounter\Wordcount\obj\Debug\netcoreapp2.2\Wordcount.dll
 C:\Users\JF\documents\git\wordcounter\Wordcount\obj\Debug\netcoreapp2.2\Wordcount.pdb
+C:\Users\JF\documents\git\wordcounter\wordcount\obj\Debug\netcoreapp2.2\Wordcount.RazorAssemblyInfo.cache
+C:\Users\JF\documents\git\wordcounter\wordcount\obj\Debug\netcoreapp2.2\Wordcount.RazorAssemblyInfo.cs
+C:\Users\JF\documents\git\wordcounter\wordcount\bin\Debug\netcoreapp2.2\Wordcount.runtimeconfig.json
+C:\Users\JF\documents\git\wordcounter\wordcount\bin\Debug\netcoreapp2.2\Wordcount.runtimeconfig.dev.json
+C:\Users\JF\documents\git\wordcounter\wordcount\obj\Debug\netcoreapp2.2\Wordcount.RazorTargetAssemblyInfo.cache

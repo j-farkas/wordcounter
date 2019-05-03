@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JF\\documents\\git\\wordcounter\\Wordcount\\Wordcount.csproj": {}
+    "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount\\Wordcount.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JF\\documents\\git\\wordcounter\\Wordcount\\Wordcount.csproj": {
+    "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount\\Wordcount.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JF\\documents\\git\\wordcounter\\Wordcount\\Wordcount.csproj",
+        "projectUniqueName": "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount\\Wordcount.csproj",
         "projectName": "Wordcount",
-        "projectPath": "C:\\Users\\JF\\documents\\git\\wordcounter\\Wordcount\\Wordcount.csproj",
+        "projectPath": "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount\\Wordcount.csproj",
         "packagesPath": "C:\\Users\\JF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JF\\documents\\git\\wordcounter\\Wordcount\\obj\\",
+        "outputPath": "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -39,6 +39,21 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
