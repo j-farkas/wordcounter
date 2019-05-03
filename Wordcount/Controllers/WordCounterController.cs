@@ -42,34 +42,34 @@ namespace Wordcount.Controllers
         return RedirectToAction("Index");
     }
 
-      [HttpPost("/game/delete")]
-      public ActionResult DeleteAll()
-      {
-        Counter.ClearAll();
-        return RedirectToAction("Index");
-      }
+    [HttpPost("/game/delete")]
+    public ActionResult DeleteAll()
+    {
+      Counter.ClearAll();
+      return RedirectToAction("Index");
+    }
 
-      [HttpPost("/game/{id}")]
-      public ActionResult Delete(int id)
-      {
-        Counter.DeleteAt(id);
-        return RedirectToAction("Index");
-      }
+    [HttpPost("/game/{id}")]
+    public ActionResult Delete(int id)
+    {
+      Counter.DeleteAt(id);
+      return RedirectToAction("Index");
+    }
 
-      [HttpPost("/game/{id}/compare")]
-      public ActionResult EditCompare(int id, string compare)
-      {
-        Counter counter = Counter.Find(id);
-        counter.SetCompare(compare);
-        return RedirectToAction("Show",id);
-      }
+    [HttpPost("/game/{id}/compare")]
+    public ActionResult EditCompare(int id, string compare)
+    {
+      Counter counter = Counter.Find(id);
+      counter.SetCompare(compare);
+      return RedirectToAction("Show",id);
+    }
 
-      [HttpPost("/game/{id}/to")]
-      public ActionResult EditTo(int id, string to)
-      {
-        Counter counter = Counter.Find(id);
-        counter.SetTo(to);
-        return RedirectToAction("Show",id);
-      }
+    [HttpPost("/game/{id}/to")]
+    public ActionResult EditTo(int id, string to)
+    {
+      Counter counter = Counter.Find(id);
+      counter.SetTo(to);
+      return RedirectToAction("Show",id);
+    }
   }
 }
