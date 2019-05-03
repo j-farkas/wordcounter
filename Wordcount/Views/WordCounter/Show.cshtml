@@ -8,7 +8,7 @@
     <li>Word: @Model.GetCompare()</li>
     <li>Sentence: @Model.GetTo()</li>
     <li>Appearances of word in Sentence: @Model.Count()</li>
-    <li>Scrabble Score: @ScrabbleScore.ScoreIt(Model.GetCompare())</li>
+    <li>Scrabble Score of @Model.GetCompare(): @ScrabbleScore.ScoreIt(Model.GetCompare())</li>
   </ul>
   <form action="/game/@Model.GetId()/compare" method="post">
   <input id="compare" name="compare" type="text">

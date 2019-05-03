@@ -18,7 +18,8 @@ namespace Wordcount.Models
       int score = 0;
       theWord = theWord.ToLower();
       char[] toScore = theWord.ToCharArray();
-      for (int i = 0; i < toScore.Length; i++) {
+      for (int i = 0; i < toScore.Length; i++)
+      {
           if(Array.IndexOf(One,toScore[i])>=0)
           {
             score++;

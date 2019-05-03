@@ -1,9 +1,10 @@
 body{
   background-color: #77aa33;
+  font-family: monospace;
+  font-size: 18px;
 }
 
-.text-center
-{
+.text-center{
   text-align: center;
 }
 
@@ -21,4 +22,13 @@ body{
 
 .active :not(.invis){
   border-radius:7px;
+}
+
+.well{
+  margin-top: 50px;
+text-align: center;
+}
+
+.display{
+  color: #000066;
 }
