@@ -8,7 +8,7 @@ namespace Wordcount.Controllers
   public class WordCounterController : Controller
   {
 
-    [HttpGet("/items/{id}")]
+    [HttpGet("/game/{id}")]
       public ActionResult Show(int id)
       {
         Counter counter = Counter.Find(id);
@@ -50,6 +50,30 @@ namespace Wordcount.Controllers
         Counter.ClearAll();
         return RedirectToAction("Index");
       }
+
+      [HttpPost("/game/{id}")]
+      public ActionResult Delete(int id)
+      {
+        Counter.DeleteAt(id);
+        return RedirectToAction("Index");
+      }
+
+      [HttpPost("/game/{id}/compare")]
+      public ActionResult EditCompare(int id, string compare)
+      {
+        Counter counter = Counter.Find(id);
+        counter.SetCompare(compare);
+        return RedirectToAction("Show",id);
+      }
+
+      [HttpPost("/game/{id}/to")]
+      public ActionResult EditTo(int id, string to)
+      {
+        Counter counter = Counter.Find(id);
+        counter.SetTo(to);
+        return RedirectToAction("Show",id);
+      }
+
 
   }
 }

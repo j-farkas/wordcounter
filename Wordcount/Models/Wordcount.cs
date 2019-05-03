@@ -19,6 +19,18 @@ namespace Wordcount.Models
         _id = _instances.Count;
       }
 
+      public static void DeleteAt(int index)
+      {
+        _instances.RemoveAt(index);
+        foreach(Counter counter in _instances)
+        {
+          if(index < counter._id)
+          {
+            counter._id--;
+          }
+        }
+      }
+
       public static List<Counter> GetAll()
       {
         return _instances;
