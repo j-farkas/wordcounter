@@ -19,14 +19,14 @@ namespace Wordcount.Models
         _id = _instances.Count;
       }
 
-      public Counter()
-      {
-
-      }
-
       public static List<Counter> GetAll()
       {
         return _instances;
+      }
+
+      public static void ClearAll()
+      {
+        _instances = new List<Counter>{};
       }
 
       public static Counter Find(int searchId)

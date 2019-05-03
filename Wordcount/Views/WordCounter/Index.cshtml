@@ -9,9 +9,12 @@
 
   <body>
     <h1>Word Counter</h1>
-@foreach(Counter words in Model)
+@foreach(var words in Model)
 {
 <p>The word @words.GetCompare() appears @words.Count() times in the phrase @words.GetTo()</p>
 }
+<form action="/game/delete" method="post">
+<button type="submit">Delete All Entries</button>
+</form>
   </body>
 </html>

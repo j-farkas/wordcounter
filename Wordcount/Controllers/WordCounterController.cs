@@ -3,7 +3,7 @@ using Wordcount.Models;
 using System.Collections.Generic;
 using System;
 
-namespace Hangman.Controllers
+namespace Wordcount.Controllers
 {
   public class WordCounterController : Controller
   {
@@ -32,7 +32,7 @@ namespace Hangman.Controllers
     //    return RedirectToAction("Play");
     // }
     //
-    [HttpGet("/game/play")]
+    [HttpGet("/game")]
     public ActionResult Index()
     {
 
@@ -56,28 +56,17 @@ namespace Hangman.Controllers
     [HttpPost("/game")]
       public ActionResult Create(string compare, string to)
       {
-          new Counter(compare, to);
+          Counter theCounter = new Counter(compare, to);
+          return RedirectToAction("Index");
       }
 
 
-    // //
-    // [HttpPost("/game/play/again")]
-    // public ActionResult Replay()
-    // {
-    //   Game.ResetLetters();
-    //   Game.GetAll().RemoveAt(0);
-    //   foreach(Game game in Game.GetAll())
-    //   {
-    //     game.ReduceId();
-    //   }
-    //   if(Game.GetAll().Count > 0)
-    //   {
-    //     return RedirectToAction("Play");
-    //   }else
-    //   {
-    //     return RedirectToAction("Index", "Home");
-    //   }
-    // }
+      [HttpPost("/game/delete")]
+      public ActionResult DeleteAll()
+      {
+        Counter.ClearAll();
+        return RedirectToAction("Index");
+      }
 
   }
 }

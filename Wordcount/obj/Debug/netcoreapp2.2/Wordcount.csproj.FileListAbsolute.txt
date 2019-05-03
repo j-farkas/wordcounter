@@ -21,4 +21,5 @@ C:\Users\JF\documents\git\wordcounter\wordcount\obj\Debug\netcoreapp2.2\Razor\Vi
 C:\Users\JF\documents\git\wordcounter\wordcount\obj\Debug\netcoreapp2.2\Wordcount.RazorTargetAssemblyInfo.cs
 C:\Users\JF\documents\git\wordcounter\wordcount\obj\Debug\netcoreapp2.2\Wordcount.Views.pdb
 C:\Users\JF\documents\git\wordcounter\wordcount\obj\Debug\netcoreapp2.2\Wordcount.csproj.CopyComplete
-C:\Users\JF\documents\git\wordcounter\wordcount\obj\Debug\netcoreapp2.2\Razor\Views\Game\Index.g.cshtml.cs
+C:\Users\JF\documents\git\wordcounter\wordcount\obj\Debug\netcoreapp2.2\Razor\Views\WordCounter\Add.g.cshtml.cs
+C:\Users\JF\documents\git\wordcounter\wordcount\obj\Debug\netcoreapp2.2\Razor\Views\WordCounter\Index.g.cshtml.cs
