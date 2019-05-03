@@ -15,3 +15,5 @@ C:\Users\JF\documents\git\wordcounter\wordcount.tests\bin\Debug\netcoreapp2.2\Wo
 C:\Users\JF\documents\git\wordcounter\wordcount.tests\obj\Debug\netcoreapp2.2\Wordcount.Tests.csproj.CopyComplete
 C:\Users\JF\documents\git\wordcounter\wordcount.tests\obj\Debug\netcoreapp2.2\Wordcount.Tests.dll
 C:\Users\JF\documents\git\wordcounter\wordcount.tests\obj\Debug\netcoreapp2.2\Wordcount.Tests.pdb
+C:\Users\JF\documents\git\wordcounter\wordcount.tests\bin\Debug\netcoreapp2.2\Wordcount.Views.dll
+C:\Users\JF\documents\git\wordcounter\wordcount.tests\bin\Debug\netcoreapp2.2\Wordcount.Views.pdb

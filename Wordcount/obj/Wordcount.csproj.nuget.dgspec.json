@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount\\Wordcount.csproj": {}
+    "C:\\Users\\JF\\documents\\git\\wordcounter\\Wordcount\\Wordcount.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount\\Wordcount.csproj": {
+    "C:\\Users\\JF\\documents\\git\\wordcounter\\Wordcount\\Wordcount.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount\\Wordcount.csproj",
+        "projectUniqueName": "C:\\Users\\JF\\documents\\git\\wordcounter\\Wordcount\\Wordcount.csproj",
         "projectName": "Wordcount",
-        "projectPath": "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount\\Wordcount.csproj",
+        "projectPath": "C:\\Users\\JF\\documents\\git\\wordcounter\\Wordcount\\Wordcount.csproj",
         "packagesPath": "C:\\Users\\JF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JF\\documents\\git\\wordcounter\\wordcount\\obj\\",
+        "outputPath": "C:\\Users\\JF\\documents\\git\\wordcounter\\Wordcount\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
