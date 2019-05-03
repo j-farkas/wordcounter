@@ -8,11 +8,15 @@ namespace Wordcount.Models
       private static char[] _letters = "qwertyuiopasdfghjklzxcvbnm".ToCharArray();
       private string _compare;
       private string _comparedTo;
+      private int _id;
+      private static List<Counter> _instances = new List<Counter> {};
 
       public Counter(string com, string to)
       {
         _compare = com;
         _comparedTo = to;
+        _instances.Add(this);
+        _id = _instances.Count;
       }
 
       public Counter()
@@ -20,6 +24,15 @@ namespace Wordcount.Models
 
       }
 
+      public static List<Counter> GetAll()
+      {
+        return _instances;
+      }
+
+      public static Counter Find(int searchId)
+      {
+        return _instances[searchId-1];
+      }
       public string GetCompare()
       {
         return _compare;

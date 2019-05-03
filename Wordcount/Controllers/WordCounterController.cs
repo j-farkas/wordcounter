@@ -5,7 +5,7 @@ using System;
 
 namespace Hangman.Controllers
 {
-  public class GameController : Controller
+  public class WordCounterController : Controller
   {
 
     // [HttpPost("/game/play/{letter}")]
@@ -32,22 +32,22 @@ namespace Hangman.Controllers
     //    return RedirectToAction("Play");
     // }
     //
-    // [HttpGet("/game/play")]
-    // public ActionResult Play()
-    // {
-    //
-    //   if(Game.GetAll().Count > 0)
-    //   {
-    //     List<Game> allCategories = Game.GetAll();
-    //     Game toPlay = Game.Find(1);
-    //     return View(toPlay);
-    //   }else
-    //   {
-    //     return RedirectToAction("Index", "Home");
-    //   }
-    //
-    // }
-    //
+    [HttpGet("/game/play")]
+    public ActionResult Play()
+    {
+
+      if(Game.GetAll().Count > 0)
+      {
+        List<Game> allCategories = Game.GetAll();
+        Game toPlay = Game.Find(1);
+        return View(toPlay);
+      }else
+      {
+        return RedirectToAction("Index", "Home");
+      }
+
+    }
+
     // //
     // [HttpPost("/game/play/again")]
     // public ActionResult Replay()
