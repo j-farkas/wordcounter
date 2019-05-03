@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    @{Html.RenderPartial("_navbar"); } 
     <meta charset='utf-8'>
     <title>Add words to check!</title>
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
@@ -17,6 +18,6 @@
       <button type="submit">Submit</button>
     </form>
   </div>
-  @{Html.RenderPartial("MyPartial"); } 
+
   </body>
 </html>

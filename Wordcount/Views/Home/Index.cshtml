@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    @{Html.RenderPartial("_navbar"); } 
     <meta charset='utf-8'>
     <title>Wordcounter</title>
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
@@ -10,6 +11,6 @@
   <body>
     <h1>Word Counter</h1>
     <h3><a href='/game'>Compare some words</a></h3>
-    @{Html.RenderPartial("MyPartial"); } 
+
   </body>
 </html>
