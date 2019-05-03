@@ -21,7 +21,7 @@ namespace Wordcount.Models
 
       public static void DeleteAt(int index)
       {
-        _instances.RemoveAt(index);
+        _instances.RemoveAt(index-1);
         foreach(Counter counter in _instances)
         {
           if(index < counter._id)

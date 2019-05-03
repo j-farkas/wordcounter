@@ -1,8 +1,10 @@
+@using Wordcount.Models;
 <h2>@Model.GetId()</h2>
 <ul>
 <li>Word:@Model.GetCompare()</li>
 <li>Sentence:@Model.GetTo()</li>
 <li>Appearances of word in Sentence:@Model.Count()</li>
+<li>Scrabble Score: @ScrabbleScore.ScoreIt(Model.GetCompare())</li>
 </ul>
 
 <form action="/game/@Model.GetId()/compare" method="post">
