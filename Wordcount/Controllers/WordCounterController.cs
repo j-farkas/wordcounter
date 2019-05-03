@@ -35,11 +35,6 @@ namespace Wordcount.Controllers
         return View();
       }
 
-      public ActionResult Partial()
-      {
-        return PartialView("_navbar");
-      }
-
     [HttpPost("/game")]
       public ActionResult Create(string compare, string to)
       {
