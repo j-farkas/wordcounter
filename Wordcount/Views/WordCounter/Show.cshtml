@@ -9,11 +9,11 @@
 <input id="compare" name="compare" type="text">
   <button type="submit" class="btn btn-dark" name="feed">Change the Word</button>
 </form>
-<form action="/game/@Model.GetId()/compare" method="post">
+<form action="/game/@Model.GetId()/to" method="post">
 <input id="to" name="to" type="text">
   <button type="submit" class="btn btn-danger" name="rest">Change the sentence</button>
 </form>
-<form action="/game/@Model.GetId()" method="post">
+<form action="/game/@Model.GetId()/" method="post">
   <button type="submit" class="btn btn-danger" name="rest">Delete this set of words</button>
 </form>
 
