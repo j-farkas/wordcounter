@@ -21,11 +21,11 @@ body{
 }
 
 .active :not(.invis){
-  border-radius:7px;
+  border-radius:6px;
 }
 
 .well{
-  margin-top: 50px;
+  margin-top: 52px;
 text-align: center;
 }
 
