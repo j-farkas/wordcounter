@@ -22,11 +22,20 @@ body{
 
 .active :not(.invis){
   border-radius:6px;
+  font-size:50px;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  margin-right: 50%;
 }
 
 .well{
   margin-top: 52px;
-text-align: center;
+  text-align: center;
 }
 
 .display{
