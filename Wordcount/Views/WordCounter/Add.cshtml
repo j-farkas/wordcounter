@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    @{Html.RenderPartial("_navbar"); } 
+    @{Html.RenderPartial("_navbar"); }
     <meta charset='utf-8'>
     <title>Add words to check!</title>
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
@@ -11,7 +11,7 @@
     <div class="container">
     <h1>Word Counter</h1>
     <form action="/game" method="post">
-      <label for="compare">Compare this word</label>
+      <label for="compare">Compare this word(Letters only!)</label>
       <input id="compare" name="compare" type="text">
       <label for="to">To this phrase</label>
       <input id="to" name="to" type="text">

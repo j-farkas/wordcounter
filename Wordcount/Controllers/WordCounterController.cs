@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Wordcount.Models;
 using System.Collections.Generic;
 using System;
+using System.Text.RegularExpressions;
 
 namespace Wordcount.Controllers
 {
@@ -38,7 +39,10 @@ namespace Wordcount.Controllers
     [HttpPost("/game")]
     public ActionResult Create(string compare, string to)
     {
-        Counter theCounter = new Counter(compare, to);
+        if(Regex.IsMatch(compare, @"^[a-zA-Z]+$") == true)
+        {
+          Counter theCounter = new Counter(compare, to);
+        }
         return RedirectToAction("Index");
     }
 
