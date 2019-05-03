@@ -48,6 +48,11 @@ namespace Wordcount.Models
         return _comparedTo;
       }
 
+      public int GetId()
+      {
+        return _id;
+      }
+
       public void SetTo(string to)
       {
         _comparedTo = to;

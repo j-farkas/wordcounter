@@ -1,0 +1,21 @@
+<h2>@Model.GetId()</h2>
+<ul>
+<li>Word:@Model.GetCompare()</li>
+<li>Sentence:@Model.GetTo()</li>
+<li>Appearances of word in Sentence:@Model.GetCount()</li>
+</ul>
+
+<form action="/items/@Model.GetId()/compare" method="post">
+<input id="compare" name="compare" type="text">
+  <button type="submit" class="btn btn-dark" name="feed">Change the Word</button>
+</form>
+<form action="/items/@Model.GetId()/compare" method="post">
+<input id="to" name="to" type="text">
+  <button type="submit" class="btn btn-danger" name="rest">Change the sentence</button>
+</form>
+<form action="/items/@Model.GetId()/delete" method="post">
+  <button type="submit" class="btn btn-danger" name="rest">Delete this set of words</button>
+</form>
+
+<a href='/game/new'>Add a new set of words</a><br>
+<a href='/game'>View all sets of words</a>

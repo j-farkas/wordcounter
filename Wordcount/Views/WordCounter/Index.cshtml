@@ -11,7 +11,7 @@
     <h1>Word Counter</h1>
 @foreach(var words in Model)
 {
-<p>The word @words.GetCompare() appears @words.Count() times in the phrase @words.GetTo()</p>
+<a href=/game/@words.GetId()>The word @words.GetCompare() appears @words.Count() times in the phrase @words.GetTo()</a>
 }
 <form action="/game/delete" method="post">
 <button type="submit">Delete All Entries</button>

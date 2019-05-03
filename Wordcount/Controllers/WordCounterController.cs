@@ -8,30 +8,13 @@ namespace Wordcount.Controllers
   public class WordCounterController : Controller
   {
 
-    // [HttpPost("/game/play/{letter}")]
-    // public ActionResult New(char letter)
-    // {
-    //    Game playing = Game.Find(1);
-    //
-    //    char[] theWord = playing.TheWord.ToCharArray();
-    //    if(Array.IndexOf(theWord, letter) < 0)
-    //    {
-    //      playing.Guesses = playing.Guesses+1;
-    //    }
-    //    while(Array.IndexOf(theWord, letter) >= 0)
-    //    {
-    //      playing.SetGuessed(Array.IndexOf(theWord, letter), letter);
-    //      theWord[Array.IndexOf(theWord,letter)] = '_';
-    //    }
-    //    Game.RemoveLetter(letter);
-    //    playing.TheWord = new string(theWord);
-    //    if(Array.IndexOf(playing.GetGuessed(),'_') < 0)
-    //    {
-    //      playing.Winner();
-    //    }
-    //    return RedirectToAction("Play");
-    // }
-    //
+    [HttpGet("/items/{id}")]
+      public ActionResult Show(int id)
+      {
+        Counter counter = Counter.Find(id);
+        return View(counter);
+      }
+
     [HttpGet("/game")]
     public ActionResult Index()
     {
