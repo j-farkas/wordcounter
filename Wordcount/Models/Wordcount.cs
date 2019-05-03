@@ -15,6 +15,31 @@ namespace Wordcount.Models
         _comparedTo = to;
       }
 
+      public Counter()
+      {
+
+      }
+
+      public string GetCompare()
+      {
+        return _compare;
+      }
+
+      public void SetCompare(string com)
+      {
+        _compare = com;
+      }
+
+      public string GetTo()
+      {
+        return _comparedTo;
+      }
+
+      public void SetTo(string to)
+      {
+        _comparedTo = to;
+      }
+
       public int Count()
       {
         int count = 0;
