@@ -27,7 +27,6 @@ namespace Wordcount.Controllers
       {
         return RedirectToAction("Add");
       }
-
     }
 
     [HttpGet("/game/add")]
@@ -42,7 +41,6 @@ namespace Wordcount.Controllers
           Counter theCounter = new Counter(compare, to);
           return RedirectToAction("Index");
       }
-
 
       [HttpPost("/game/delete")]
       public ActionResult DeleteAll()
@@ -73,7 +71,5 @@ namespace Wordcount.Controllers
         counter.SetTo(to);
         return RedirectToAction("Show",id);
       }
-
-
   }
 }

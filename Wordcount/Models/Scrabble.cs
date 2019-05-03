@@ -46,9 +46,7 @@ namespace Wordcount.Models
           {
             score+=10;
           }
-
       }
-
       return score;
     }
   }
