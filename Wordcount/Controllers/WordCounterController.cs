@@ -9,11 +9,11 @@ namespace Wordcount.Controllers
   {
 
     [HttpGet("/game/{id}")]
-      public ActionResult Show(int id)
-      {
-        Counter counter = Counter.Find(id);
-        return View(counter);
-      }
+    public ActionResult Show(int id)
+    {
+      Counter counter = Counter.Find(id);
+      return View(counter);
+    }
 
     [HttpGet("/game")]
     public ActionResult Index()
@@ -30,17 +30,17 @@ namespace Wordcount.Controllers
     }
 
     [HttpGet("/game/add")]
-      public ActionResult Add()
-      {
-        return View();
-      }
+    public ActionResult Add()
+    {
+      return View();
+    }
 
     [HttpPost("/game")]
-      public ActionResult Create(string compare, string to)
-      {
-          Counter theCounter = new Counter(compare, to);
-          return RedirectToAction("Index");
-      }
+    public ActionResult Create(string compare, string to)
+    {
+        Counter theCounter = new Counter(compare, to);
+        return RedirectToAction("Index");
+    }
 
       [HttpPost("/game/delete")]
       public ActionResult DeleteAll()
