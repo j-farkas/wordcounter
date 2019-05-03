@@ -3,6 +3,7 @@
 <div class="container">
   <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
   <link rel="stylesheet" href="~/css/styles.css">
+  <div class = "show">
   <h2>Word list: @Model.GetId()</h2>
   <ul>
     <li>Word: @Model.GetCompare()</li>
@@ -21,4 +22,5 @@
   <form action="/game/@Model.GetId()/" method="post">
     <button type="submit" class="btn btn-danger" name="rest">Delete this set of words</button>
   </form>
+  </div>
 </div>
